@@ -4,12 +4,20 @@ Welcome to the VS Code Java world. Here is a guideline to help you get started t
 
 
 ## Class Card
-    int suit
-        0 is a wildcard
-        1 is a red card
-        2 is a green card
-        3 is a blue card
-        4 is a yellow card
+	int suit
+		0 is a wildcard
+		1 is a red card
+		2 is a green card
+		3 is a blue card
+		4 is a yellow card
+	
+	int value
+		0-9 are their respective numbers
+		10 is skip
+		11 is reverse
+		12 is +2
+		13 is color change
+		14 is +4 and color change
 
 
 ## Folder Structure
