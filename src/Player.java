@@ -12,6 +12,12 @@ public class Player{
 		this("defaultName9876", 0);
 	}
 
+	public Player(String name){
+		this.name = name;
+		this.wins = 0;
+		this.cards = new Deck();
+	}
+
 	public Player(String name, int wins){
 		this.name = name;
 		this.wins = wins;
@@ -34,6 +40,10 @@ public class Player{
 		this.cards.addCard(card);
 	}
 
+	public Card getCard(int cardIndex){
+		return this.cards.takeCard(cardIndex);
+	}
+
 	public boolean removeCard(Card card){
 		return this.cards.removeCard(card);
 	}
@@ -42,6 +52,9 @@ public class Player{
 		return this.cards.contains(card);
 	}
 
+	public Deck getCards(){
+		return this.cards;
+	}
 	
 
 }
